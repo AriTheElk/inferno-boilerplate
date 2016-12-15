@@ -1,6 +1,6 @@
 /**
- * Pizza delivery prompt example
- * run example by writing `node pizza.js` in your console
+ * MK is a minimal generator for constructing components from template files
+ * powered by inquirer
  */
 'use strict';
 var fs = require('fs-extra');
