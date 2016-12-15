@@ -4,6 +4,8 @@ One of the boilerplate features I'm most excited about, is the CLI utilities. I 
 boilerplate files just to add a simple component to my app. It should be that difficult, and so I made it no longer
 that difficult :wink:
 
+![CLI Screencast Gif](http://imgur.com/nQDdZSm.gif)
+
 ## Interactive Maker
 
 The first step is typing in `yarn mk` to load the interactive **m**a**k**er.
