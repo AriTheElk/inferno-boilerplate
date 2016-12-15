@@ -16,3 +16,13 @@
 - [x] Webpack
 - [x] Babel
 
+
+## Demo
+
+<p align="center">
+  <b>Online Demo Coming Soon 🎉</b>
+</p>
+
+<p align="center">
+  <img src="http://imgur.com/CgPk0Am.gif" alt="inferno boilerplate movie search preview"/>
+</p>
