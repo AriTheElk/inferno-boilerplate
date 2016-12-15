@@ -5,6 +5,7 @@
   <a href='https://github.com/garetmckinley/inferno-boilerplate/issues'><img alt='David' src='https://img.shields.io/david/garetmckinley/inferno-boilerplate.svg'/></a>
   <a href='https://github.com/garetmckinley/inferno-boilerplate/issues'><img alt='David' src='https://img.shields.io/david/dev/garetmckinley/inferno-boilerplate.svg'/></a>
   <a href='https://twitter.com/intent/tweet?hashtags=inferno-boilerplate&original_referer=https%3A%2F%2Fgithub.com%2Fgaretmckinley%2Finferno-boilerplate&ref_src=github%5Etfw&tw_p=tweetbutton&url=https%3A%2F%2Fgithub.com%2Fgaretmckinley%2Finferno-boilerplate&via=garetmckinley'><img alt='Tweet Link' src='https://img.shields.io/twitter/url/http/shields.io.svg?style=social'/></a>
+  <a href="https://mjackson.me/icare"><img src="https://mjackson.me/icare/ICARE-white.png" alt="ICARE"></a>
 </p>
 
 ## Features
