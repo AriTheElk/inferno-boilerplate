@@ -22,9 +22,8 @@ $ node internals/scripts/mk.js
   container.js
 ```
 
-You must first choose a template for that maker to use. Currently there's only two available, one for a Stateless Functional
-Component and another for a Stateful Container Component. You can view and modify the templates via the `internals/templates/`
-directory.
+You must first choose a template for that maker to use. Currently there's only two available, one for a **Stateless Presentational Component** and another for a **Stateful Container Component**. You can view and modify the templates via 
+the `internals/templates/` directory.
 
 ### Name
 
