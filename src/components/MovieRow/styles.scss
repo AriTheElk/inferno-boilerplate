@@ -1,0 +1,33 @@
+.wrapper {
+  position: relative;
+  background: rgba(255, 255, 255, .03);
+  border-radius: 4px;
+  cursor: pointer;
+  max-height: 100px;
+  overflow: hidden;
+  width: 100%;
+  transition: all .2s ease-out;
+  left: 0;
+
+  &:hover {
+    position: relative;
+    left: -5%;
+    width: 110%;
+  }
+}
+
+.title {
+  margin: 15px 0 10px 0;
+  line-height: 400%;
+}
+
+.poster {
+  float: left;
+  max-height: 100px;
+}
+
+.meta {
+  font-size: 14px;
+  font-weight: 100;
+
+}

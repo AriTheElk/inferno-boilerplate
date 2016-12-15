@@ -1,0 +1,26 @@
+@import '../../styles/animations';
+
+.input {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #53B0EA;
+  font-weight: 100;
+  padding: 8px 12px;
+  width: 100%;
+  margin-bottom: 25px;
+  &[type=submit] {
+    border-color: #53B0EA;
+    cursor: pointer;
+    &:disabled {
+      cursor: not-allowed;
+      opacity: .5;
+    }
+  }
+  &[invalid=true] {
+    animation: shake .1s 3;
+  }
+  &:focus {
+    border-color: #53B0EA;
+    outline: none;
+  }
+}

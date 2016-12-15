@@ -1,0 +1,22 @@
+@import '../../styles/animations';
+
+.nav {
+  padding: 0;
+  > * {
+    animation: fadeInUp .25s 1 ease-out;
+    animation-fill-mode: forwards;
+    list-style: none;
+    opacity: 0;
+    @for $i from 1 through 25 {
+      &:nth-child(#{$i}) {
+        animation-delay: $i * .1s;
+      }
+    }
+  }
+}
+.nav > * {
+  margin: 0 5px 5px 0;
+}
+.nav > *:last-child {
+  margin-right: inherit;
+}
