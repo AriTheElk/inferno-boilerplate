@@ -4,6 +4,7 @@ import Component from 'inferno-component';
 import Input from '../../components/Input';
 import List from '../../components/List';
 import MovieRow from '../../components/MovieRow';
+import Spinner from '../../components/Spinner';
 import { setMoviesQuery } from '../../actions/movies';
 
 export default class HomePage extends Component {
@@ -21,7 +22,7 @@ export default class HomePage extends Component {
 
         { state.ajax.callsInProgress === 0
           ? <List items={ movies }/>
-          : 'loading...' }
+          : <Spinner/> }
       </div>
     );
   }
