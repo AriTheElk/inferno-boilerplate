@@ -11,7 +11,6 @@
 
 - [x] Inferno
 - [x] Redux
-- [x] RxJs + Redux Observable
 - [x] [Custom CLI Utility](docs/CLI.md)
 - [x] Webpack
 - [x] Babel
