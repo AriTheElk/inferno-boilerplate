@@ -1,7 +1,7 @@
 # Inferno Boilerplate CLI
 
 One of the boilerplate features I'm most excited about, is the CLI utilities. I really hate having to create multiple
-boilerplate files just to add a simple component to my app. It should be that difficult, and so I made it no longer
+boilerplate files just to add a simple component to my app. It shouldn't be that difficult, and so I made it no longer
 that difficult :wink:
 
 ![CLI Screencast Gif](http://imgur.com/nQDdZSm.gif)
