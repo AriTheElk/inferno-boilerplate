@@ -4,7 +4,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: {
     main: './src/index.js',
-    vendor: 'inferno',
   },
   output: {
     filename: '[chunkhash].[name].js',
@@ -28,7 +27,7 @@ module.exports = {
   },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
-      names: ['vendor', 'manifest'] // Specify the common bundle's name.
+      name: 'vendor' // Specify the common bundle's name.
     }),
     new HtmlWebpackPlugin({
       template: 'public/index.html',

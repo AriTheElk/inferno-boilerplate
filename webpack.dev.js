@@ -1,7 +1,12 @@
 const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
+  output: {
+    filename: '[name].js',
+    chunkFilename: '[name].chunk.js',
+  },
   module: {
     loaders: [
       {
@@ -18,6 +23,10 @@ module.exports = {
       },
     ]
   },
+  performance: {
+    maxAssetSize: 1000000,
+    maxEntrypointSize: 1000000,
+  },
   devServer: {
     contentBase: './',
     port: 4000,
@@ -33,6 +42,9 @@ module.exports = {
     }
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebpackPlugin({
+      template: 'public/index.html',
+    }),
   ]
 };
