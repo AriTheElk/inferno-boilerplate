@@ -42,16 +42,13 @@ export const setMoviesQuery = (query) => {
   return function (dispatch) {
     dispatch(moviesQueryChanged(query));
     dispatch(startAjaxCall());
-    console.log('movies query');
-    fetch('http://www.omdbapi.com/?s=' + query)
+    fetch('//www.omdbapi.com/?s=' + query)
     .then(function(response) {
       return response.json();
     }).then(function(json) {
-      console.log('parsed json', json);
       dispatch(moviesLoaded(json.Search));
       dispatch(finishAjaxCall());
     }).catch(function(ex) {
-      console.log('parsing failed', ex);
       dispatch(finishAjaxCall());
     });
   };
