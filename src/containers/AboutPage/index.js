@@ -1,6 +1,6 @@
 import Inferno from 'inferno';
 
-export default function HomePage({ children }) {
+export default function AboutPage({ children }) {
   return (
     <div>
       built by <a href='https://twitter.com/garetmckinley' target='_blank'>Garet McKinley</a>
