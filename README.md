@@ -37,6 +37,7 @@ I personally have always been one who learns best by following examples and reve
 1. [Setup & Installation](docs/Setup.md)
 2. [Running Development Server](docs/Dev_Server.md)
 3. [Linting](docs/Linting.md)
+4. [Building](docs/Building.md)
 
 ## Notes
 
