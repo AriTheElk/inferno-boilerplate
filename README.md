@@ -24,7 +24,7 @@ I personally have always been one who learns best by following examples and reve
 ## Demo
 
 <p align="center">
-  <a href="https://build-nwxsujcfjh.now.sh"><b>🔥 Click Here to View the Live Demo 🔥</b></a>
+  <a href="http://inferno-boilerplate.surge.sh"><b>🔥 Click Here to View the Live Demo 🔥</b></a>
 </p>
 
 <p align="center">
