@@ -2,12 +2,6 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: './src/index.js',
-  output: {
-    path: '.',
-    filename: 'bundle.js',
-    publicPath: '/'
-  },
-	//devtool: 'source-map',
   module: {
     loaders: [
       {
@@ -16,23 +10,23 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: "style-loader!css-loader?modules"
+        loader: 'style-loader!css-loader?modules'
       },
       {
         test: /\.scss$/,
-        loaders: ["style-loader", "css-loader?modules&sourceMap", "sass-loader?modules&sourceMap"]
+        loaders: ['style-loader', 'css-loader?modules&sourceMap', 'sass-loader?modules&sourceMap']
       },
     ]
   },
   devServer: {
     contentBase: './',
-    port: 8080,
+    port: 4000,
     noInfo: false,
     hot: true,
     inline: true,
     proxy: {
       '/': {
-        bypass: function (req, res, proxyOptions) {
+        bypass: function () {
           return '/public/index.html';
         }
       }
