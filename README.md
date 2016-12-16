@@ -40,5 +40,4 @@ I personally have always been one who learns best by following examples and reve
 
 ## Notes
 
-- Currently it is only possible to run the app in development mode, production configurations have not yet been written for webpack yet. If you want to help land this feature, feel free to open a [pull request](https://github.com/garetmckinley/inferno-boilerplate/pulls)!
 - `inferno-boilerplate` is in it's early states; if you notice any bugs while using it, please [open an issue](https://github.com/garetmckinley/inferno-boilerplate/issues/new)!
