@@ -2,6 +2,8 @@
 
 This boilerplate comes equipt with a development server powered by `webpack-dev-server`. The dev server supports [Hot Module Replacement](https://webpack.github.io/docs/hot-module-replacement.html) for live reloading :tada:
 
+![hot module replacement](http://imgur.com/6xGNQ3l.gif)
+
 Although it is _technically possible_, I do not under any circumstance recommend running the dev server in a production environment.
 
 ## Running
