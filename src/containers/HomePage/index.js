@@ -7,6 +7,14 @@ import MovieRow from '../../components/MovieRow';
 import Spinner from '../../components/Spinner';
 import { setMoviesQuery } from '../../actions/movies';
 
+
+/**
+ * The home page component containing the search functions
+ *
+ * @export
+ * @class HomePage
+ * @extends {Component}
+ */
 export default class HomePage extends Component {
   render() {
     const store = this.context.store;
