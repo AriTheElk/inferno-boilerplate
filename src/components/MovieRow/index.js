@@ -7,7 +7,7 @@ import styles from './styles.scss';
  * Renders a single formatted movie search result
  *
  * @export
- * @param {object} props
+ * @param {object} data
  * @returns
  */
 export default function MovieRow({ data, ...props }) {
