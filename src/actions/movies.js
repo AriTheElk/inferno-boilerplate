@@ -49,6 +49,7 @@ export const setMoviesQuery = (query) => {
       dispatch(moviesLoaded(json.Search));
       dispatch(finishAjaxCall());
     }).catch(function(ex) {
+      console.error(ex);
       dispatch(finishAjaxCall());
     });
   };
