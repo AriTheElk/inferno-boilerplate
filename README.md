@@ -10,7 +10,7 @@
 
 ## Mission Statement
 
-I personally have always been one who learns best by following examples and reverse engineering real world code. For that reason, I have constructed this boilerplate; in the hopes that anyone who is new to Inferno will be able to pick it up and not only have a valuable starting point, but actually be able to learn how to build **useful** applications with a real world stack.
+I personally have always been one who learns best by following examples and reverse engineering real world code. For that reason, I have constructed this boilerplate; in the hopes that anyone who is new to Inferno will be able to pick it up and not only have a valuable starting point, but actually be able to learn how to build **useful** applications using a real world stack.
 
 ## Features
 
