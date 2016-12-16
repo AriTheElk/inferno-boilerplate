@@ -1,5 +1,10 @@
 import Inferno from 'inferno';
 
+/**
+ * The about page gives some attribution back to the authors
+ *
+ * @export
+ */
 export default function AboutPage({ children }) {
   return (
     <div>
