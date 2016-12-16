@@ -9,7 +9,7 @@ import { startAjaxCall, finishAjaxCall } from './ajax';
  * Action fired after the movies are loaded via the omdb API
  *
  * @export
- * @param {array} tweets
+ * @param {array} results
  */
 export const moviesLoaded = (results) => {
   return {
@@ -22,7 +22,7 @@ export const moviesLoaded = (results) => {
  * Action fired after the movie query has been set/changed
  *
  * @export
- * @param {string} user
+ * @param {string} query
  */
 export const moviesQueryChanged = (query) => {
   return {
