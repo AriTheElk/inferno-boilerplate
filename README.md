@@ -27,19 +27,12 @@
   <img src="http://imgur.com/CgPk0Am.gif" alt="inferno boilerplate movie search preview"/>
 </p>
 
-## Usage
 
-#### Start dev server
+## Documentation
 
-```
-yarn start
-```
-
-#### Run Linter
-
-```
-yarn lint
-```
+1. [Setup & Installation](docs/Setup.md)
+2. [Running Development Server](docs/Dev_Server.md)
+3. [Linting](docs/Linting.md)
 
 ## Notes
 
