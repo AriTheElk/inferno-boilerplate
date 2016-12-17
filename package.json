@@ -9,7 +9,8 @@
     "lint": "eslint ./",
     "server": "webpack-dev-server --quiet --config webpack.dev.js --host 0.0.0.0 --port 4000",
     "mk": "babel-node internals/scripts/mk.js",
-    "start": "npm-run-all --parallel lint server"
+    "start": "npm-run-all --parallel lint server",
+    "test": "npm run lint"
   },
   "repository": {
     "type": "git",
