@@ -3,11 +3,11 @@
  * powered by inquirer
  */
 'use strict';
-var fs = require('fs-extra');
-var inquirer = require('inquirer');
+const fs = require('fs-extra');
+const inquirer = require('inquirer');
 
 
-var questions = [
+const questions = [
   {
     type: 'list',
     name: 'template',
@@ -19,7 +19,7 @@ var questions = [
     name: 'name',
     message: 'Name ❯',
     validate: function (value) {
-      var pass = value.match(/^[a-zA-Z0-9_]*$/);
+      const pass = value.match(/^[a-zA-Z0-9_]*$/);
       if (pass) {
         return true;
       }
@@ -41,13 +41,13 @@ var questions = [
 ];
 
 function build(name, description) {
-  var dest = 'src/components/' + name + '/';
-  var component_src = dest + 'index.js';
+  const dest = 'src/components/' + name + '/';
+  const component_src = dest + 'index.js';
   fs.readFile(dest + 'index.js', 'utf8', function (err,data) {
     if (err) {
       return console.log(err);
     }
-    var result = data.replace(/COMPONENT_NAME/g, name).replace(/COMPONENT_DESCRIPTION/g, description);
+    const result = data.replace(/COMPONENT_NAME/g, name).replace(/COMPONENT_DESCRIPTION/g, description);
 
     // another small piece of callback hell that will be resolved
     fs.writeFile(component_src, result, 'utf8', function (err) {
@@ -58,8 +58,8 @@ function build(name, description) {
 }
 
 inquirer.prompt(questions).then(function (answers) {
-  var dest = 'src/components/' + answers.name;
-  var template = 'internals/templates/' + answers.template;
+  const dest = 'src/components/' + answers.name;
+  const template = 'internals/templates/' + answers.template;
 
   // only run the given function if there is no error
   const runOrDie = (func, error) => {
