@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /**
  * MK is a minimal generator for constructing components from template files
  * powered by inquirer
@@ -65,7 +66,7 @@ inquirer.prompt(questions).then(function (answers) {
   const runOrDie = (func, error) => {
     if (error) return console.error(error);
     return func();
-  }
+  };
 
   // append an asset filename onto our destination path
   const assetPath = (asset) => `${dest}/${asset}`;
