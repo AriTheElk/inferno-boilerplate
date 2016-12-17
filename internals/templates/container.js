@@ -15,7 +15,7 @@ export default class COMPONENT_NAME extends Component {
     super(props);
     this.state = {
       // initialize state here
-    }
+    };
   }
   render() {
     return (
