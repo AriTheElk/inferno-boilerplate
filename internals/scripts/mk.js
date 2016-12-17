@@ -61,23 +61,44 @@ inquirer.prompt(questions).then(function (answers) {
   var dest = 'src/components/' + answers.name;
   var template = 'internals/templates/' + answers.template;
 
-  // try to ignore this little piece of callback hell
-  // it will all be okay...
-  fs.mkdirs(dest, function (err) {
-    if (err) return console.error(err);
-    console.log('💪 Created `' + dest + '`');
-    fs.copy(template, dest + '/index.js', function (err) {
-      if (err) return console.error(err);
+  // only run the given function if there is no error
+  const runOrDie = (func, error) => {
+    if (error) return console.error(error);
+    return func();
+  }
+
+  // append an asset filename onto our destination path
+  const assetPath = (asset) => `${dest}/${asset}`;
+
+
+  const stylesCreated = (e) =>
+    runOrDie(() => {
+      console.log('👠 Created styles.scss');
+      build(answers.name, answers.description);
+    }, e);
+
+  const copyStyles = () =>
+    answers.styles
+      ? fs.outputFile(assetPath('styles.scss'), '', stylesCreated)
+      : build(answers.name, answers.description);
+
+  const templateCopied = (e) =>
+    runOrDie(() => {
       console.log('🔨 Created index.js from component template');
-      if (answers.styles) {
-        fs.outputFile(dest + '/styles.scss', '', function (err) {
-          if (err) return console.error(err);
-          console.log('👠 Created styles.scss');
-          build(answers.name, answers.description);
-        })
-      } else {
-        build(answers.name, answers.description);
-      }
-    });
-  });
+      copyStyles();
+    }, e);
+
+  const copyTemplate = () =>
+    fs.copy(template, assetPath('index.js'), templateCopied);
+
+  const folderCreated = (e) =>
+    runOrDie(() => {
+      console.log(`💪 Created ${dest}`);
+      copyTemplate();
+    }, e);
+
+  const createFolder = () =>
+    fs.mkdirs(dest, folderCreated);
+
+  createFolder();
 });
