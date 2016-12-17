@@ -8,7 +8,7 @@
     "build:serve": " cd build & python -m SimpleHTTPServer 3000",
     "lint": "eslint src/**/*.js",
     "server": "webpack-dev-server --quiet --config webpack.dev.js --host 0.0.0.0 --port 4000",
-    "mk": "node internals/scripts/mk.js",
+    "mk": "babel-node internals/scripts/mk.js",
     "start": "npm-run-all --parallel lint server"
   },
   "repository": {
@@ -60,6 +60,7 @@
     "webpack-manifest-plugin": "^1.1.0"
   },
   "dependencies": {
+    "babel-cli": "^6.18.0",
     "history": "^4.4.0",
     "inferno": "1.0.0-beta32",
     "inferno-component": "1.0.0-beta32",
