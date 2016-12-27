@@ -41,7 +41,7 @@ I personally have always been one who learns best by following examples and reve
 
 ## Notes
 
-- `inferno-boilerplate` is in it's early states; if you notice any bugs while using it, please [open an issue](https://github.com/garetmckinley/inferno-boilerplate/issues/new)!
+- `inferno-boilerplate` is in its early states; if you notice any bugs while using it, please [open an issue](https://github.com/garetmckinley/inferno-boilerplate/issues/new)!
 
 ## License
 
